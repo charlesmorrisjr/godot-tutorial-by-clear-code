@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://h4xac3ax1v3"]
+
+[ext_resource type="Script" uid="uid://86oflpn4ty5p" path="res://scenes/game_scene.gd" id="1_bw6k5"]
+[ext_resource type="Texture2D" uid="uid://doghmovcgeltw" path="res://graphics/map.png" id="1_onqr8"]
+[ext_resource type="PackedScene" uid="uid://dghd7rii024ea" path="res://scenes/player.tscn" id="2_ycayy"]
+[ext_resource type="PackedScene" uid="uid://fhg0v1comfg8" path="res://scenes/house_with_trees.tscn" id="3_ycayy"]
+
+[node name="Game" type="Node2D" unique_id=431550358]
+script = ExtResource("1_bw6k5")
+
+[node name="Map" type="Sprite2D" parent="." unique_id=2091019931]
+position = Vector2(193, 322)
+texture = ExtResource("1_onqr8")
+
+[node name="Player" parent="." unique_id=1817051230 instance=ExtResource("2_ycayy")]
+position = Vector2(217, 368)
+
+[node name="HouseWithTrees" parent="." unique_id=16636366 instance=ExtResource("3_ycayy")]
+position = Vector2(335, 636)
