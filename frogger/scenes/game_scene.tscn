@@ -7,13 +7,15 @@
 
 [node name="Game" type="Node2D" unique_id=431550358]
 script = ExtResource("1_bw6k5")
+metadata/_edit_horizontal_guides_ = [640.0]
+metadata/_edit_vertical_guides_ = [384.0]
 
 [node name="Map" type="Sprite2D" parent="." unique_id=2091019931]
-position = Vector2(193, 322)
+position = Vector2(192, 320)
 texture = ExtResource("1_onqr8")
 
 [node name="Player" parent="." unique_id=1817051230 instance=ExtResource("2_ycayy")]
 position = Vector2(217, 368)
 
 [node name="HouseWithTrees" parent="." unique_id=16636366 instance=ExtResource("3_ycayy")]
-position = Vector2(335, 636)
+position = Vector2(333, 633)
