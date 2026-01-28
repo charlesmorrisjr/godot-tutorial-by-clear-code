@@ -6,6 +6,12 @@
 [ext_resource type="PackedScene" uid="uid://fhg0v1comfg8" path="res://scenes/house_with_trees.tscn" id="3_ycayy"]
 [ext_resource type="PackedScene" uid="uid://bx2rg78cu21y2" path="res://scenes/tree.tscn" id="5_y3j0m"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y3j0m"]
+size = Vector2(27, 640)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rurhu"]
+size = Vector2(383.5, 24)
+
 [node name="Game" type="Node2D" unique_id=431550358]
 script = ExtResource("1_bw6k5")
 metadata/_edit_horizontal_guides_ = [640.0]
@@ -23,3 +29,29 @@ position = Vector2(333, 633)
 
 [node name="Tree" parent="." unique_id=1546777889 instance=ExtResource("5_y3j0m")]
 position = Vector2(257, 363)
+
+[node name="Borders" type="Node" parent="." unique_id=1267478702]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Borders" unique_id=1768871530]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D2" unique_id=1401699295]
+position = Vector2(-13, 320)
+shape = SubResource("RectangleShape2D_y3j0m")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Borders" unique_id=1615282520]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D" unique_id=1435315288]
+position = Vector2(397, 320)
+shape = SubResource("RectangleShape2D_y3j0m")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Borders" unique_id=352630869]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D3" unique_id=1898841500]
+position = Vector2(192.25, -12)
+shape = SubResource("RectangleShape2D_rurhu")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Borders/StaticBody2D3" unique_id=2048753599]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Borders/StaticBody2D3/StaticBody2D3" unique_id=1323806525]
+position = Vector2(192, 652)
+shape = SubResource("RectangleShape2D_rurhu")
